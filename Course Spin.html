@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Course Spin Wheel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>🎡 Course Spin Wheel</h1>
+  <p>Add your courses, spin the wheel, and let it pick what to read next.</p>
+</header>
+
+<main>
+  <section class="card wheel-card">
+    <div class="wrap">
+      <div class="pointer"></div>
+      <canvas id="wheel" width="800" height="800"></canvas>
+    </div>
+    <button class="spin" id="spin">SPIN</button>
+    <div class="result" id="result">Press spin to pick a course.</div>
+  </section>
+
+  <section class="card list-card">
+    <h2>Your courses</h2>
+    <div class="add">
+      <input id="inp" type="text" placeholder="Type a course name…" maxlength="60">
+      <button id="addBtn">Add</button>
+    </div>
+    <ul id="list"></ul>
+    <div class="hint" id="hint"></div>
+    <button class="clear" id="clear">Clear all</button>
+  </section>
+</main>
+
+<footer>Created by Kin Maximus</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
